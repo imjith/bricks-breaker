@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+
+	<style>
+		img {
+			display: none;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* to remove the top and left whitespace */
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+
+		/* just to
+	be sure these are full screen*/
+		canvas {
+			display: block;
+		}
+
+		/* To remove the scrollbars */
+		/* to show the canvas bounds */
+		canvas {
+		 background-image: radial-gradient(#3A9826, #102A07);
+		}
+
+		div {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<img id="ball" src="/src/assets/images/ball.png"></img>
+	<img id="brick" src="/src/assets/images/brick.png"></img>
+  <img id="paddle" src="/src/assets/images/paddle.png"></img>
+  <canvas id="gamescreen"></canvas>
+  <script src="src/index.js"></script>
+  </body>
+</html>
